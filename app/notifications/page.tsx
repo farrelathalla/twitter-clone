@@ -1,16 +1,21 @@
 "use client";
-import TweetPost from "@/components/TweetPost";
 import WhoToFollow from "@/components/WhoToFollow";
+import PostNotification from "@/components/PostNotification";
+import LikeNotification from "@/components/LikeNotification";
 
 const page = () => {
   return (
     <main>
       <div className="grid lg:grid-cols-[65%_35%] gap-8 pl-24 pr-8 md:pr-20 lg:pr-24 py-2">
-        <div className="flex flex-col">
-          <TweetPost
+        <div className="flex flex-col pt-10">
+          <h1 className="font-black text-2xl">Notifications</h1>
+          <p className="mt-10 font-semibold text-lg mb-5"> All </p>
+          <PostNotification
             profileImage="/placeholder.jpeg"
             username="elonmusk"
             fullname="Elon Musk"
+            reply="magnettosz"
+            replyId={2}
             createdAt="8h"
             content="ELON: IF WE DON'T MAINTAIN THE CULTURAL INDETITIES OF THE VARIOUS COUNTRIES, THEY WILL DISAPPEAR"
             contentImage="/placeholder.jpeg"
@@ -21,19 +26,10 @@ const page = () => {
             repost={false}
             repostCount={4}
           />
-          <TweetPost
+          <LikeNotification
             profileImage="/placeholder.jpeg"
-            username="elonmusk"
-            fullname="Elon Musk"
-            createdAt="8h"
-            content="ELON: IF WE DON'T MAINTAIN THE CULTURAL INDETITIES OF THE VARIOUS COUNTRIES, THEY WILL DISAPPEAR"
-            contentImage="/placeholder.jpeg"
-            commentCount={3}
-            like={true}
-            likeCount={10}
-            bookmark={true}
-            repost={true}
-            repostCount={4}
+            fullname="na"
+            content="tes"
           />
         </div>
 

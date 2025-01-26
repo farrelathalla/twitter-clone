@@ -1,41 +1,11 @@
 "use client";
-import TweetPost from "@/components/TweetPost";
 import WhoToFollow from "@/components/WhoToFollow";
 
 const page = () => {
   return (
     <main>
       <div className="grid lg:grid-cols-[65%_35%] gap-8 pl-24 pr-8 md:pr-20 lg:pr-24 py-2">
-        <div className="flex flex-col">
-          <TweetPost
-            profileImage="/placeholder.jpeg"
-            username="elonmusk"
-            fullname="Elon Musk"
-            createdAt="8h"
-            content="ELON: IF WE DON'T MAINTAIN THE CULTURAL INDETITIES OF THE VARIOUS COUNTRIES, THEY WILL DISAPPEAR"
-            contentImage="/placeholder.jpeg"
-            commentCount={3}
-            like={false}
-            likeCount={10}
-            bookmark={false}
-            repost={false}
-            repostCount={4}
-          />
-          <TweetPost
-            profileImage="/placeholder.jpeg"
-            username="elonmusk"
-            fullname="Elon Musk"
-            createdAt="8h"
-            content="ELON: IF WE DON'T MAINTAIN THE CULTURAL INDETITIES OF THE VARIOUS COUNTRIES, THEY WILL DISAPPEAR"
-            contentImage="/placeholder.jpeg"
-            commentCount={3}
-            like={true}
-            likeCount={10}
-            bookmark={true}
-            repost={true}
-            repostCount={4}
-          />
-        </div>
+        <div className="flex flex-col"></div>
 
         {/* Right Home */}
         <div className="lg:block hidden">
